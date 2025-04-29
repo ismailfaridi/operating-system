@@ -23,10 +23,14 @@ void my_fork() {
 
   if(pid == 0) {
     printf("Child\n");
+    printf("=> Child PID: %d\n", getpid());
+    printf("=> Child Parent PID: %d\n", getppid());
     exit(0); // program terminated successfully
   }
   else {
     printf("Parent\n");
+    printf("-> Parent PID: %d\n", getpid());
+    printf("-> Child PID: %d\n", pid);
     exit(0);
   }
 }

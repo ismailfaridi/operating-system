@@ -54,7 +54,7 @@ int main() {
     close(pipefd[0]); 					// Close unused read end of pipe.
     write(pipefd[1], testString, strlen(testString));	// Write strlen(testString) of bytes to pipefd[1] from the testString.
     close(pipefd[1]); 					// Close write end of pipe.
-    exit(1);
+    exit(0);
   }
 
   // Parent Code: Read from pipe

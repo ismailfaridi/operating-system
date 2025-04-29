@@ -18,6 +18,11 @@
  * nr 		hold number of bytes read from pipe
  * buf[1024] 	store data read from pipe
  * status	store child exit status
+
+ * Read(), Write(), Close() System Calls
+ * - ssize_t read(int fd, void *buf, size_t count);        // Read up to count bytes from file descriptor fd into the buffer starting at buf. On success, read() returns the number of bytes read.
+ * - ssize_t write(int fd, const void *buf, size_t count); // Write up to count bytes to the file referenced by the file descriptor fd from the buffer starting at buf. On success, write() returns the number of bytes written.
+ * - int close(int fd);                                    // Closes  a  file  descriptor,  so  that it no longer refers to any file and may be reused.
 */
 
 #include <stdio.h>	// perror()

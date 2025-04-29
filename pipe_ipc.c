@@ -3,8 +3,13 @@
   Website:  https://ismailfaridi.com
   Linkedin: https://www.linkedin.com/in/ismailfaridi/
 
+ * PIPE
+ * - A pipe is a mechanism used for Inter-Process Communication (IPC) between related processes, typically between a parent and its child process.
+ * - Pipes are unidirectional, meaning they allow one-way communication only - data flows in a single direction.
+ * - Pipe is a bounded buffer with atomic writes up to PIPE_BUF (4096 bytes) in linux, defined in <linux/limits.h> or <linux/param.h>.
+ * - `int pipe(int fd[2]);` syscall creates a pipe fills fd[0] (read end) and fd[1] (write end).
 
- * Parent creates pipe & fork a child. Child writes into the pipe, and parent reads from the pipe.
+ * Program: Parent creates pipe & fork a child. Child writes into the pipe, and parent reads from the pipe.
  
  * Variable	Meaning
  * ------------------------------------------------------

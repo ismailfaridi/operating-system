@@ -1,8 +1,3 @@
-/*
- * Program: Server creates FIFO1 (read) and FIFO2(write). Client writes to FIFO1, read from FIFO2.
-            Server reads client msg, replies via FIFO2. Both display messages, then terminate.
-*/
-
 #include <stdio.h>	// perror(), BUFSIZ
 #include <stdlib.h>	// exit()
 #include <string.h>	// strlen()

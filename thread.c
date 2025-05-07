@@ -1,3 +1,9 @@
+/*
+  # Compilation & Execution
+    gcc file.c -o file -lpthread -D_REENTRANT
+    ./file
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>

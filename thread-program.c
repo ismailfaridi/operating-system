@@ -6,6 +6,7 @@
 
 #include <stdio.h>
 #include <pthread.h>
+
 #define NUM_THREADS 8
 
 char *messages[NUM_THREADS]; // array of strings to store different messages in different languages.

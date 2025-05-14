@@ -1,3 +1,12 @@
+/*
+  Write a C/C++ program where:
+  •	The parent process creates two child processes using fork().
+  •	Each child process prints its PID and PPID.
+  •	Each child calls exit(0) after printing a message.
+  •	The parent process uses wait() to wait for both children.
+  •	Print a confirmation from the parent after both children terminate.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>

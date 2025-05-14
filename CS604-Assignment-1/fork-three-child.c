@@ -1,3 +1,12 @@
+/*
+  Write a program for ubuntu and compile it in GNU Compiler which creates 3 child processes from a parent process using fork(). Each child process should:
+  •	Print its process ID (PID) and parent process ID (PPID)
+  •	Execute a simple calculation (e.g., factorial of a small number)
+  •	Print your Student ID and Student Name in a line
+  •	Print the result of factorial before exiting
+  The parent process should wait for all children to complete and print a summary message.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>

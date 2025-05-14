@@ -1,3 +1,38 @@
+/*
+    Write a C program that creates two threads (T1 and T2) with the following functionality:
+    Thread T1:
+        1. Reads integers from a file named input.txt (create this file with 5 integers, one per line).
+        2. Calculates the sum of these integers.
+        3. Writes the sum to a new file output.txt.
+        4. Prints the sum to the console.
+    Thread T2:
+        1. Takes a string input from the user (e.g., "HelloOOS"). [Student needs to input their
+        Full Name here].
+        2. Replaces all vowels (a, e, i, o, u) with * (e.g., "H*ll***S").
+        3. Prints the modified string to the console and appends it to output.txt.
+    Requirements:
+        • Use pthread_create() and pthread_join().
+        • Students Should create a Folder with name as your Student ID and all the files input.txt,
+        output.txt, program.c and program.o should be placed in that folder. Also, input student
+        name as modified string input to replace the vowels. For example, input string should
+        be as “Shakeel” and modified string written in the output file and in program screen
+        shot should be “Sh*k**l”
+
+    Program behavior:
+    1. The main program creates `input.txt` with numbers 10, 20, 30, 40, 50 (if it doesn't exist)
+    2. Thread T1:
+        - Reads numbers from `input.txt`
+        - Calculates the sum (150)
+        - Writes the sum to `output.txt`
+        - Prints the sum to console
+    3. Thread T2:
+        - Asks for user input (e.g., "HelloOS") or Student Name
+        - Replaces vowels with * (e.g., "H*ll**S")
+        - Prints the modified string to console
+        - Appends the modified string to `output.txt`
+    The “output.txt” file will contain both the sum from T1 and the modified string from T2.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h> // pthread_create(), pthread_join(), pthread_exit()

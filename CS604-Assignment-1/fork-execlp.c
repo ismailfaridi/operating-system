@@ -1,3 +1,17 @@
+/*
+  Write a C/C++ program where:
+  •	The parent process creates two child processes using fork().
+  •	Each child process prints its PID and PPID.
+  •	Each child calls exit(0) after printing a message.
+  •	The parent process uses wait() to wait for both children.
+  •	Print a confirmation from the parent after both children terminate.
+
+  Now Modify the above program so that:
+  •	One of the children (e.g., the first one) uses execlp() to execute the ls command.
+  •	Handle failure of execlp() using appropriate error messages.
+  •	Remove wait() from the parent process and use a sleep delay to inspect zombie behavior using commands like ps.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>

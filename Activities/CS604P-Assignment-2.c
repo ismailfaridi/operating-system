@@ -29,8 +29,8 @@ int main() {
     scanf("%d", &num_frames);
 
     // Calculating page size and frame size (assuming uniform size)
-    page_size = logical_address_space * 1024 / num_pages;
-    frame_size = total_memory * 1024 / num_frames;
+    page_size = (logical_address_space * 1024) / num_pages;
+    frame_size = (total_memory * 1024) / num_frames;
 
     // Calculate number of bits using log2
     offset_bits = (int)ceil(log2(page_size));

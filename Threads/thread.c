@@ -1,6 +1,6 @@
 /*
   # Compilation & Execution
-    gcc file.c -o file -lpthread -D_REENTRANT
+    gcc file.c -o file -lpthread
     ./file
 */
 
@@ -24,7 +24,7 @@ int main() {
   }
 
   // 'main' thread wait for this thread 'thread_id' to finish.
-  if(pthread_join(thread_id, NULL) != 0 ) {
+  if(pthread_join(thread_id, NULL) != 0) {
     printf("Failed to join thread.\n");
     return 1;
   }

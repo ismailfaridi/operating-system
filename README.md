@@ -1,4 +1,4 @@
-# Operating Systems  
+# Operating System  
 This repository contains hands-on exercises and projects from an Operating Systems course, focusing on Linux/UNIX. It is designed to help students explore fundamental OS concepts through practical implementation.  
 
 ## Contact
